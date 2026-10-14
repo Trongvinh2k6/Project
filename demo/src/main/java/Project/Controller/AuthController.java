@@ -58,6 +58,7 @@ public class AuthController {
         LoginResponseDTO responseDTO = new LoginResponseDTO();
         responseDTO.setAccessToken(accessToken);
         responseDTO.setRefreshToken(refreshToken);
+		responseDTO.setTokenType("Bearer");
         responseDTO.setUser(new UserLogin(currentUser.getId(), currentUser.getEmail(), currentUser.getRole().getName()));
 
         ResponseCookie resCookies = ResponseCookie.from("refreshToken", refreshToken).httpOnly(true).secure(true)

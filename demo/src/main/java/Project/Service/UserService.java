@@ -1,5 +1,6 @@
 package Project.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -61,7 +62,7 @@ public class UserService {
 		User user = convertDTOToUser(userRequestDTO);
 
 		Cart cart = new Cart();
-
+		cart.setItems(new ArrayList<>());
 		user.setCart(cart);
 		cart.setUser(user);
 

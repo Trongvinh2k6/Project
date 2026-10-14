@@ -9,6 +9,13 @@
             "name": "ProjectApplication",
             "request": "launch",
             "mainClass": "Project.ProjectApplication",
+            "projectName": "springsieutoc"
+        },
+        {
+            "type": "java",
+            "name": "ProjectApplication",
+            "request": "launch",
+            "mainClass": "Project.ProjectApplication",
             "projectName": "demo"
         },
         {

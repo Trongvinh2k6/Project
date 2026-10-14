@@ -127,6 +127,7 @@ public class JWTService {
 		ExchangeTokenResponse exToken = new ExchangeTokenResponse();
 		exToken.setAccessToken(accessToken);
 		exToken.setRefreshToken(newRefreshToken);
+		exToken.setTokenType("Bearer");
 		exToken.setUser(new LoginResponseDTO.UserLogin(currentUser.getId(), currentUser.getEmail(), scope));
 
 		// delete old refreshToken

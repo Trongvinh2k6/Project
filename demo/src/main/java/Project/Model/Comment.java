@@ -41,7 +41,7 @@ public class Comment {
     @NotBlank(message = "content không được để trống")
     private String content;
 
-    private boolean isApproved = false;
+    private boolean isApproved;
 
     private Instant createdAt;
 
